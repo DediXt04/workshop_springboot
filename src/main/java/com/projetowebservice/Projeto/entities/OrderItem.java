@@ -35,6 +35,7 @@ public class OrderItem {
         id.setOrder(order);
     }
 
+    @JsonIgnore
     public Product getProduct(){
         return id.getProduct();
     }
@@ -42,8 +43,6 @@ public class OrderItem {
     public void setProduct(Product product){
         id.setProduct(product);
     }
-
-
 
     public Integer getQuantity() {
         return quantity;
